@@ -67,3 +67,22 @@ footer {
     padding: 15px 10px;
     cursor: pointer;
 }
+
+/* PRODUCTOS */
+
+/* INDEX */
+tr svg{
+    height: 30px;
+}
+tr .Editar{
+    color: black;
+}
+tr .Eliminar {
+    color: red;
+}
+tr .Detalles{
+    color: black;
+}
+.iconos a{
+    margin: 5px;
+}
