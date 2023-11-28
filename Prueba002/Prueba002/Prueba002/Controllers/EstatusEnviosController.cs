@@ -10,7 +10,7 @@ using Prueba002.Models.dbModels;
 
 namespace Prueba002.Controllers
 {
-    [Authorize(Roles = "Cliente")]
+    [Authorize(Roles = "Administrador")]
     public class EstatusEnviosController : Controller
     {
         private readonly Incio_ProyectoContext _context;

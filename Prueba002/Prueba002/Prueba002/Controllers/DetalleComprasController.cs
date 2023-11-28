@@ -10,8 +10,7 @@ using Prueba002.Models.dbModels;
 
 namespace Prueba002.Controllers
 {
-    [Authorize(Roles = "Administrador")]
-    [Authorize(Roles = "Cliente")]
+    [Authorize(Roles = "Administrador,Cliente")]
     public class DetalleComprasController : Controller
     {
         private readonly Incio_ProyectoContext _context;
