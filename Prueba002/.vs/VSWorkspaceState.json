@@ -7,10 +7,11 @@
     "\\Prueba002\\Prueba002\\Areas\\Identity",
     "\\Prueba002\\Prueba002\\Areas\\Identity\\Pages",
     "\\Prueba002\\Prueba002\\Areas\\Identity\\Pages\\Account",
+    "\\Prueba002\\Prueba002\\Controllers",
     "\\Prueba002\\Prueba002\\Views",
     "\\Prueba002\\Prueba002\\Views\\Shared",
     "\\Prueba002\\Prueba002\\wwwroot"
   ],
-  "SelectedNode": "\\Prueba002\\Prueba002\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+  "SelectedNode": "\\Prueba002\\Prueba002\\Controllers\\ComprasController.cs",
   "PreviewInSolutionExplorer": false
 }

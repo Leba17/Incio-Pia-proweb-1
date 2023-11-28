@@ -22,7 +22,7 @@ img{
     max-width: 100%;
 }
 
-header{
+.header-index {
     display: flex;
     justify-content: space-between;
 }
