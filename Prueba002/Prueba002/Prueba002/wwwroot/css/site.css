@@ -100,4 +100,9 @@ div .Titulo{
 tr th, td {
     text-align: center;
 }
-
+form .btn{
+    margin: 5px;
+}
+header .Borrar{
+    text-align: center;
+}
