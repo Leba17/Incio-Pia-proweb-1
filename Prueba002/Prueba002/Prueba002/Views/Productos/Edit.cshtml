@@ -4,9 +4,10 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
-
-<h4>Producto</h4>
+<div class="Titulo">
+    <h1>Productos</h1>
+    <h3>Editar</h3>
+</div>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -46,15 +47,16 @@
                 </select>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Guardar" class="btn btn-primary" />
+            </div>
+            <div>
+                <a class="btn btn-warning" asp-action="Index">Regresar a la lista</a>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
