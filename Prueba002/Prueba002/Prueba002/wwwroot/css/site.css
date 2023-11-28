@@ -80,9 +80,24 @@ tr .Editar{
 tr .Eliminar {
     color: red;
 }
-tr .Detalles{
-    color: black;
+tr .Detalles {
+    color: #B9770E;
 }
 .iconos a{
     margin: 5px;
 }
+div .Titulo{
+    text-align:center;
+    margin: 10px;
+}
+.Titulo a{
+    height: 30px;
+}
+.thead-dark th {
+    background-color: #343a40;
+    color: #fff;
+}
+tr th, td {
+    text-align: center;
+}
+

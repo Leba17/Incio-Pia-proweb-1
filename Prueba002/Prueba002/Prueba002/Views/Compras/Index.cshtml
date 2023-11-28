@@ -4,22 +4,24 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<div class="Titulo">
+    <h1>Compras</h1>
+    <p>
+        <a asp-action="Create">Nueva Compra</a>
+    </p>
+</div>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
+<table class="table table-bordered table-hover">
+    <thead class="thead-dark">
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.FechaCompra)
+                Fecha de Compra
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IdEstatusEnvioNavigation)
+                Estatus
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IdUsuarioNavigation)
+                Usuario
             </th>
             <th></th>
         </tr>
