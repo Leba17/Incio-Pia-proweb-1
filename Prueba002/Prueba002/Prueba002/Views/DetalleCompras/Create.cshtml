@@ -4,9 +4,10 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
-
-<h4>DetalleCompra</h4>
+<div class="Titulo">
+    <h1>DetalleCompra</h1>
+    <h3>Crear</h3>
+</div>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -31,15 +32,16 @@
                 <span asp-validation-for="PrecioProducto" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Crear" class="btn btn-primary" />
+            </div>
+            <div>
+                <a class="btn btn-warning" asp-action="Index">Regresar a la lista</a>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

@@ -4,11 +4,14 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<div class="Titulo">
+    <h1>DetallesCompras</h1>
 
+    <h3>Detalles</h3>
+</div>
+<hr />
 <div>
-    <h4>DetalleCompra</h4>
-    <hr />
+    
     <dl class="row">
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Cantidad)
@@ -38,5 +41,5 @@
 </div>
 <div>
     @Html.ActionLink("Edit", "Edit", new { id=Model.IdCompra , idp=Model.IdProducto}) |
-    <a asp-action="Index">Back to List</a>
+    <a class="btn btn-warning" asp-action="Index">Regresar a la lista</a>
 </div>
