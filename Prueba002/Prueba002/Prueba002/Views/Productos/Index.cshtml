@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Prueba002.Models.dbModels.Producto>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1></h1>
+
+<p>
+    <a asp-action="Create">Crear Un Nuevo Producto</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NombreProducto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Stock)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrecioProducto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdCategoriaNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdMarcasNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreProducto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Stock)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrecioProducto)
+            </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdCategoriaNavigation.Descripcion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdMarcasNavigation.Marcas)
+                </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdProducto">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.IdProducto">Detalles</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdProducto">Eliminar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

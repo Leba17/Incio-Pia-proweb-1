@@ -1,0 +1,134 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <header class="header-index">
+        <div class="">
+            <h1 class="">¡Bienvenidos a TecnoByte!</h1>
+            <h1 class="">¿Qué Desea Comprar Hoy?</h1>
+        </div>
+        
+    <!-- Carrito Button -->
+    <button class="cart-button" onclick="window.location.href='/Carritos/Index'">
+        Carrito
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8 inline-block ml-2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 4L2 6m0 0L1 7m1-1L2 6m7 13h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v4m0 6h10a2 2 0 002-2v-2H5a2 2 0 002 2z" />
+        </svg>
+    </button>
+
+    <!-- Compra Button -->
+    <button class="purchase-button" onclick="window.location.href='/Compras/Index'">
+        Compra
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8 inline-block ml-2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 4l2 16h12l2-16M7 4h10" />
+        </svg>
+    </button>
+    </header>
+
+    <div class="container-items">
+        <div class="row">
+            <!--Procesadores-->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="item">
+                    <figure>
+                        <img src="~/Imagenes/Procesadores.jpg" alt="Procesadores" />
+                    </figure>
+                    <div class="Info-Producto">
+                        <h2>Procesadores</h2>
+                    <button><a asp-controller="Productos" asp-action="Index" asp-route-id="id=12" >Ir a Procesadores</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Tarjetas Graficas-->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="item">
+                    <figure>
+                        <img src="~/Imagenes/TarjetasGraficas.jpg" alt="Tarjeta Grafica" />
+                    </figure>
+                    <div class="Info-Producto">
+                        <h2>Tarjetas Graficas</h2>
+                    <button><a asp-controller="Productos" asp-action="Index" asp-route-id="id=13">Ir a Tarjetas Graficas</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Placa Madre-->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="item">
+                    <figure>
+                        <img src="~/Imagenes/PlacaMadre.png" alt="Placa Madre" />
+                    </figure>
+                    <div class="Info-Producto">
+                        <h2>Placa Madre</h2>
+                    <button><a asp-controller="Productos" asp-action="Index" asp-route-id="id=14">Ir a Placas Madre</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Almacenamiento-->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="item">
+                    <figure>
+                        <img src="~/Imagenes/SSD NVMe.png" alt="Almacenamiento" />
+                    </figure>
+                    <div class="Info-Producto">
+                        <h2>Almacenamiento</h2>
+                    <button><a asp-controller="Productos" asp-action="Index" asp-route-id="id=15">Ir a Almacenamiento</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Gabinetes-->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="item">
+                    <figure>
+                        <img src="~/Imagenes/Gabinetes.jpg" alt="Gabinetes" />
+                    </figure>
+                    <div class="Info-Producto">
+                        <h2>Gabinetes</h2>
+                    <button><a asp-controller="Productos" asp-action="Index" asp-route-id="id=16">Ir a Gabinetes</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Disipadores-->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="item">
+                    <figure>
+                        <img src="~/Imagenes/Disipadores.png" alt="Disipadores" />
+                    </figure>
+                    <div class="Info-Producto">
+                        <h2>Disipadores</h2>
+                    <button><a asp-controller="Productos" asp-action="Index" asp-route-id="id=19">Ir a Disipadores</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Fuentes De Poder-->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="item">
+                    <figure>
+                        <img src="~/Imagenes/FuenteDePoder.jpg" alt="Fuentes De Poder" />
+                    </figure>
+                    <div class="Info-Producto">
+                        <h2>Fuentes de Poder</h2>
+                    <button><a asp-controller="Productos" asp-action="Index" asp-route-id="id=17">Ir a Fuentes De Poder</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Memoras RAM-->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="item">
+                    <figure>
+                        <img src="~/Imagenes/MemoriaRAM.jpeg" alt="Memorias Ram" />
+                    </figure>
+                    <div class="Info-Producto">
+                        <h2>Memorias RAM</h2>
+                    <button><a asp-controller="Productos" asp-action="Index" asp-route-id="id=18">Ir a Memorias RAM</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

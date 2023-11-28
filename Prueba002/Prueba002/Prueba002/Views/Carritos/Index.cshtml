@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Prueba002.Models.dbModels.Carrito>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<link rel="stylesheet" href="~/css/carrito.css">
+
+<h1 class="display-4">Carrito de Compras</h1>
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">Agregar Nuevo</a>
+</p>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>
+                    Cantidad
+                </th>
+                <th>
+                    Producto
+                </th>
+                <th>
+                    Usuario
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Cantidad)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdProductoNavigation.NombreProducto)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdUsuarioNavigation.Nombre)
+                    </td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            @Html.ActionLink("Editar", "Edit", new { id = item.IdProducto, idu = item.IdUsuario }, new { @class = "btn btn-warning btn-sm" })
+                            @Html.ActionLink("Detalles", "Details", new { id = item.IdProducto, idu = item.IdUsuario }, new { @class = "btn btn-info btn-sm" })
+                            @Html.ActionLink("Eliminar", "Delete", new { id = item.IdProducto, idu = item.IdUsuario }, new { @class = "btn btn-danger btn-sm" })
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
