@@ -8,6 +8,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="Views\Ciudades\Create.cshtml" />
+    <None Include="Views\Ciudades\Delete.cshtml" />
+    <None Include="Views\Ciudades\Details.cshtml" />
+    <None Include="Views\Ciudades\Edit.cshtml" />
+    <None Include="Views\Ciudades\Index.cshtml" />
+    <None Include="Views\Marcas\Create.cshtml" />
+    <None Include="Views\Marcas\Delete.cshtml" />
+    <None Include="Views\Marcas\Details.cshtml" />
+    <None Include="Views\Marcas\Edit.cshtml" />
+    <None Include="Views\Marcas\Index.cshtml" />
+    <None Include="Views\Proveedor\Create.cshtml" />
+    <None Include="Views\Proveedor\Delete.cshtml" />
+    <None Include="Views\Proveedor\Details.cshtml" />
+    <None Include="Views\Proveedor\Edit.cshtml" />
+    <None Include="Views\Proveedor\Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.22" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.23" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.23" />
