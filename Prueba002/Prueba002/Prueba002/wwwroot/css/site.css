@@ -93,10 +93,7 @@ tr .Detalles {
 .iconos a{
     margin: 5px;
 }
-div .Titulo{
-    text-align:center;
-    margin: 10px;
-}
+
 .Titulo a{
     height: 30px;
 }
@@ -112,4 +109,8 @@ form .btn{
 }
 header .Borrar{
     text-align: center;
+}
+.Titulo {
+    text-align: center;
+    margin: 10px;
 }
