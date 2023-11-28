@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nLHGnjbMfNBdTy+AF2vRZKbdQKBYV5Hxvx9P2jkjeb8=",
+  "Hash": "mhAWAMLHaIoILEqMzqvxj5y8fSP/9iInyHGrm/M3wKM=",
   "Source": "Prueba002",
   "BasePath": "_content/Prueba002",
   "Mode": "Default",
@@ -1154,6 +1154,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\carritoeditar.css"
+    },
+    {
+      "Identity": "C:\\Users\\abeld\\source\\repos\\Incio-Pia-proweb-1\\Prueba002\\Prueba002\\Prueba002\\wwwroot\\css\\estatusenvio.css",
+      "SourceId": "Prueba002",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\abeld\\source\\repos\\Incio-Pia-proweb-1\\Prueba002\\Prueba002\\Prueba002\\wwwroot\\",
+      "BasePath": "_content/Prueba002",
+      "RelativePath": "css/estatusenvio.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\estatusenvio.css"
     },
     {
       "Identity": "C:\\Users\\abeld\\source\\repos\\Incio-Pia-proweb-1\\Prueba002\\Prueba002\\Prueba002\\wwwroot\\css\\site.css",

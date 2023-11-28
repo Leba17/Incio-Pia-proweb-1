@@ -4,32 +4,36 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<link rel="stylesheet" href="~/css/estatusenvio.css">
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Estatus)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Estatus)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.IdEstatusEnvio">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdEstatusEnvio">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdEstatusEnvio">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<div class="container">
+    <h1>Index</h1>
+
+    <p>
+        <a asp-action="Create" class="btn btn-primary">Angregar nuevo estatus de envio</a>
+    </p>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Estatus</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Estatus)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.IdEstatusEnvio" class="btn btn-info">Edit</a>
+                        <a asp-action="Details" asp-route-id="@item.IdEstatusEnvio" class="btn btn-success">Details</a>
+                        <a asp-action="Delete" asp-route-id="@item.IdEstatusEnvio" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
