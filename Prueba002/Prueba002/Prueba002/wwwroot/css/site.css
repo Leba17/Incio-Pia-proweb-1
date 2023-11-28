@@ -1,6 +1,8 @@
 html {
   font-size: 14px;
 }
+body{
+}
 
 @media (min-width: 768px) {
   html {
@@ -39,6 +41,7 @@ footer {
     padding: 100px 0px;
 }
 /* PAGINA DE DE INICIO */
+
 .item img {
     height: 300px;
     width: 300px;
@@ -68,9 +71,10 @@ footer {
     cursor: pointer;
 }
 
+
 /* PRODUCTOS */
 
-/* INDEX */
+
 tr svg{
     height: 30px;
 }
